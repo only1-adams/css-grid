@@ -52,7 +52,34 @@ body {
   grid-template-rows: repeat(3,1fr);
   gap: 20px;
 
-  // @media (min-width: 56.25em){
-  //   grid-template-columns: 1fr 300px;
-  // }
+  @media (max-width:600px){
+    .grid-parent{
+      width:100%;
+      grid-template-columns: repeat(1,1fr)
+       
+    }
+    
+        .main-content {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+      grid-row: 1;
+      padding: 1rem 2rem;
+    }
+
+    .sidebar1 {
+      background: #e58e26;
+      grid-column: 1;
+      grid-row: 1;
+      padding: 1rem 2rem;
+    }
+    .sidebar2 {
+      background: #273c75;
+      padding: 1rem 2rem;
+    }
+    .sidebar3 {
+      background: #4E1A3D;
+      grid-column: 1;
+      padding: 1rem 2rem;
+    }
+  
 }
